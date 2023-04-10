@@ -65,7 +65,6 @@ const fetchMovieReviewsToId = async id => {
     );
     if (response.ok) {
       const result = await response.json();
-      console.log(result.results);
       return result.results;
     } else throw new Error(`Bad request${response.status}`);
   } catch (error) {
